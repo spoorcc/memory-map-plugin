@@ -1,0 +1,10 @@
+language: java
+before_deploy: ls target
+deploy:
+  provider: releases
+  api_key:
+    secure: INxqNK505XbP/ASPvJudbKLhwjP/wnYOZIbt7QOj+3NmEySPz6KXPWJWroFNELK6wmqKKbeb7V075aEb6wRiTCIzRoxnkESXmTI1t3y02UnICoUNl0b4zAIxHzZLf39qaWdnp04nBLcKYzWzw42Pdmm7N/Rrqq226qYywOiYPQRE0q1gef2KD4HkLWMA6fghJzu6z4hqDDDwxsALdEIbz7E9LBHrx/LgsZfs83K0OwKGH+bI+XW8LmtkS+6EreeO2CQutvuysfXmpDxh7+zgJB5VTyvqnqf5s3ANW7W0j2GHigt+EC35dVeVziNHRUPOqPsrNRyXWzFKqv5RNVR82I0hrX8Mlzdnb6kXLUcL2oEa1RF6ooPtNv0lPwwsUIO7bsZc5QJCT+9n8Rjo34bTDwcc+rBKKyKP3j7EKQeBjHa7oV3FF6Ls8kDYFWurXTm9lSKgF1GSj7qs4HfDc+lph68vgDE0mww82HcZ8SIZ4svChZVtXR/9veLsoS4z9YYn7kT8eYbDMTWJMFE7KSbi86gC0GLDhZVZHm4ZmsTNxuZD0M4ud71GEnCO0cSOROyLA4fDEcLNm1/P96nE011EnU5dGJyCZnuxN4Td1OP3IU2UuyfduRevGRvh9/DXeNIohGdUKgYY3yyWw0/Dlw2BcaT79Lf+cCt1thqS0lXdoeU=
+  file: target/*
+  on:
+    repo: spoorcc/memory-map-plugin
+    branch: iar-pr-1
